@@ -15,7 +15,7 @@ class NotesTest < ApplicationSystemTestCase
     click_on "New note"
 
     fill_in "Content", with: @note.content
-    fill_in "Created at", with: @note.created_at
+    fill_in "Created", with: @note.created
     fill_in "Title", with: @note.title
     click_on "Create Note"
 
@@ -28,7 +28,7 @@ class NotesTest < ApplicationSystemTestCase
     click_on "Edit this note", match: :first
 
     fill_in "Content", with: @note.content
-    fill_in "Created at", with: @note.created_at
+    fill_in "Created", with: @note.created
     fill_in "Title", with: @note.title
     click_on "Update Note"
 

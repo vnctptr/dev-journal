@@ -19,6 +19,13 @@
     color: #ffffff
  }
 
+
+ h2 {
+    font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
+    color: #ffffff;
+}
+
 .dark-blue-bg {
     background-color: #1b212d;
 }
+
