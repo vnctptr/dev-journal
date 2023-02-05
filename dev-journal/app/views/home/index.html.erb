@@ -1,3 +1,5 @@
 <%= render 'home/sidebar' %>
 
-<%= render 'home/note_page' %> 
+<% @notes.each do |note| %>
+<%= render 'home/note_page', {note: note} %> 
+<% end %>

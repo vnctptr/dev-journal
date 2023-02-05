@@ -19,8 +19,7 @@
     max-width: 50em;
     border: 1.5px solid #00000078;
     border-radius: 6px;
-    /* border-radius: 0 0 6px 6px; */
-    padding: 3em;
+    padding: 0;
     margin: 0 auto;
     box-shadow: 0.5em 0.5em 0.1em #0000005e;
 }
@@ -30,12 +29,27 @@
     background-color: transparent;
 }
 
-.note-header {
-    max-width: 50em;
-    border: 1px solid #00000078;
-    background-color: #00000057;
-    border-radius: 6px 6px 0 0;
-    padding: 0 3em;
-    margin: 0 auto;
-    min-height: 1.5em;
+.note-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.note-content {
+    padding: 4vw;
+}
+
+.small-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 7px;
+    margin: 0.2em;
+    background-color: #8fbcfe1a;
+}
+
+.note-top-bar {
+    display: flex; 
+    min-height: 1.5em; 
+    background-color: #00000078; 
+    padding: 0.5em;
 }

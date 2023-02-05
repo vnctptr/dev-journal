@@ -15,7 +15,7 @@
  */
 
  body {
-    background-color: #1b212d;
+    background-color: #161a25;
     color: #ffffff
  }
 
@@ -26,6 +26,10 @@
 }
 
 .dark-blue-bg {
+    background-color: #161a25;
+}
+
+.med-blue-bg {
     background-color: #1b212d;
 }
 
