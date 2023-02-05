@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark fixed-top dark-blue-bg">
   <div class="container-fluid">
-    <a class="navbar-brand page-title" href="#">Dev Journal</a>
+  <%= link_to "Dev Journal", root_path, :class => "navbar-brand page-title" %>
     <button class="navbar-toggler navbar-toggler-minimal" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,8 +12,11 @@
       <div class="offcanvas-body">      
       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <%= link_to "Home", root_path, :class => "nav-link active" %>
           </li>
+          <li class="nav-item">
+          <%= link_to "About", 'about/index', :class => "nav-link active" %>
+        </li>
           <% @subjects.each do |subject| %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -21,7 +24,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-dark dropdown-transparent">
               <% subject.notes.each do |note| %>
-                <li><a class="dropdown-item" href="#"><%=note.title%></a></li>
+                <li><%= link_to note.title, note, :class => "dropdown-item" %></li>
               <% end %>
             </ul>
           </li>

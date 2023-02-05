@@ -1,22 +1,3 @@
 <div id="<%= dom_id note %>">
-  <p>
-    <strong>Title:</strong>
-    <%= note.title %>
-  </p>
-
-  <p>
-    <strong>Created:</strong>
-    <%= note.created %>
-  </p>
-
-  <p>
-    <strong>Content:</strong>
-    <%= note.content %>
-  </p>
-
-  <p>
-    <strong>Subject:</strong>
-    <%= note.subject_id %>
-  </p>
-
+  <%= render 'home/note_page', {note: note} %> 
 </div>

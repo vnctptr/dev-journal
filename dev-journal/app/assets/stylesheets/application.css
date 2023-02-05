@@ -19,11 +19,24 @@
     color: #ffffff
  }
 
-
- h2 {
+ h1 {
     font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
-    color: #ffffff;
+    font-size: calc(1.5rem + .6vw);
 }
+
+
+h2 {
+    font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
+    font-size: calc(1.3rem + .6vw);
+}
+
+
+h3 {
+    font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
+    font-size: calc(0.9rem + .6vw);
+
+}
+
 
 .dark-blue-bg {
     background-color: #161a25;
@@ -33,3 +46,8 @@
     background-color: #1b212d;
 }
 
+pre {
+    background-color: #0f111840;
+    padding: 1em;
+    border-radius: 0.5em;
+}
