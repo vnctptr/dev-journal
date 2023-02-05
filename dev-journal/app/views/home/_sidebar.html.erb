@@ -20,7 +20,9 @@
             <%= subject.name %>
             </a>
             <ul class="dropdown-menu dropdown-menu-dark dropdown-transparent">
-              <li><a class="dropdown-item" href="#">Action</a></li>
+              <% subject.notes.each do |note| %>
+                <li><a class="dropdown-item" href="#"><%=note.title%></a></li>
+              <% end %>
             </ul>
           </li>
           <% end %>
