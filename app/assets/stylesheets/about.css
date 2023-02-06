@@ -1,7 +1,13 @@
-.about-container {
-    margin: 8em;
+.about-inner-container {
+    margin: auto;
+    max-width: 43em;
+    margin-top: 6em;
     background-color: #05080d66;
     padding: 2.5em;
     font-family: "Courier New";
     border-radius: 0.6em;
+}
+
+.about-outer-container  {
+    margin: 0px 4vw;
 }
