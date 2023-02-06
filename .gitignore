@@ -90,3 +90,9 @@ build-iPhoneSimulator/
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+
+# System files
+.DS_Store
+Thumbs.db
+.idea/
