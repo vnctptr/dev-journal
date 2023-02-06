@@ -1,24 +1,3 @@
-# README
+# Vinnie's Dev Journal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Hi, welcome to my dev journal, a place where I document my dev journey, store things I learned and things I wanna have easy access to. Click [here](https://vinnie-dev-journal.herokuapp.com/) to start reading.
