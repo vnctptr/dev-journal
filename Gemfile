@@ -46,6 +46,8 @@ gem 'bootstrap'
 
 gem "redcarpet"
 
+gem 'bcrypt'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

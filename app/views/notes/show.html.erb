@@ -2,9 +2,11 @@
 
 <%= render @note %>
 
-<div>
-  <%= link_to "Edit this note", edit_note_path(@note) %> |
-  <%= link_to "Back to notes", notes_path %>
+<% if current_user %>
+  <div>
+    <%= link_to "Edit this note", edit_note_path(@note) %> |
 
-  <%= button_to "Destroy this note", @note, method: :delete %>
-</div>
+    <%= button_to "Destroy this note", @note, method: :delete %>
+  </div>
+<%end%>
+  <%= link_to "Back to notes", notes_path %>
