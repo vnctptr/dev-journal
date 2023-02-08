@@ -12,7 +12,9 @@
   <% @notes.each do |note| %>
   <div class="note-container">
     <%= render note %>
+    <% if current_user %>
        <%= link_to "Edit this note", edit_note_path(note), class: "btn btn-dark btn-sm nav-button" %>
+    <% end%>
   <% end %>
   </div>
 </div>
