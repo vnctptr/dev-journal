@@ -51,3 +51,25 @@ pre {
     padding: 1em;
     border-radius: 0.5em;
 }
+
+code { 
+    color: #ff6900;
+}
+
+.nav-buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nav-button {
+    margin: 1em;
+}
+
+.btn-dark, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #00000078 !important;
+    border-color: #161a25;
+}
+.btn-dark:hover {
+    background-color: #2a3247 !important;
+}

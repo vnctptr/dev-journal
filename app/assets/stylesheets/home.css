@@ -10,7 +10,7 @@
 }
 
 .note-container {
-    margin: 6em 1em;
+    margin: 6em 1em 2em 1em;
 
 }
 
@@ -39,11 +39,11 @@
 }
 
 .small-circle {
-    height: 15px;
-    width: 15px;
+    height: 11px;
+    width: 11px;
     border-radius: 7px;
     margin: 0.2em;
-    background-color: #8fbcfe1a;
+    background-color: #ff6900;
 }
 
 .note-top-bar {
