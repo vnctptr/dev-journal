@@ -10,12 +10,13 @@
 }
 
 .note-container {
-    margin: 6em 1em;
+    max-width: 50em;
+    margin: 6em auto 3em auto;
 
 }
 
 .note-inner-container {
-    max-width: 50em;
+    /* max-width: 50em; */
     border: 1.5px solid #00000078;
     border-radius: 6px;
     padding: 0;
@@ -39,11 +40,11 @@
 }
 
 .small-circle {
-    height: 15px;
-    width: 15px;
+    height: 11px;
+    width: 11px;
     border-radius: 7px;
     margin: 0.2em;
-    background-color: #8fbcfe1a;
+    background-color: #ff6900;
 }
 
 .note-top-bar {
@@ -51,4 +52,10 @@
     min-height: 1.5em; 
     background-color: #00000078; 
     padding: 0.5em;
+}
+
+.notes-page-title {
+    margin: 3em 0 0 0;
+    display: flex;
+    justify-content: center;
 }

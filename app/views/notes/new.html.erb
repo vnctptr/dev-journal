@@ -2,9 +2,8 @@
 
 <% if current_user %>
 <%= render "form", note: @note %>
-<br>
 <% end%>
 
-<div>
+<div class="nav-button">
   <%= link_to "Back to notes", notes_path %>
 </div>
