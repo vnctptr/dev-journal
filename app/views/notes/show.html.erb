@@ -1,5 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
+<div class="note-container">
 <%= render @note %>
 <div class="nav-buttons-container">
 <% if current_user %>
@@ -8,4 +9,5 @@
 <%end%>
 
 <%= link_to "Back to notes", notes_path, class: "btn btn-dark btn-sm nav-button" %>
+</div>
 </div>

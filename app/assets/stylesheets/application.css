@@ -58,8 +58,9 @@ code {
 
 .nav-buttons-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: row;
+    margin: 0.7em 0;
 }
 
 .nav-button {
@@ -69,6 +70,7 @@ code {
 .btn-dark, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #00000078 !important;
     border-color: #161a25;
+    color: #ffffffd6;
 }
 .btn-dark:hover {
     background-color: #2a3247 !important;
