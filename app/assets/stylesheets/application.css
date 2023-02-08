@@ -19,7 +19,7 @@
     color: #ffffff
  }
 
- h1 {
+h1 {
     font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
     font-size: calc(1.5rem + .6vw);
 }
@@ -35,6 +35,10 @@ h3 {
     font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
     font-size: calc(0.9rem + .6vw);
 
+}
+
+.spacer {
+    margin: 3em;
 }
 
 
@@ -72,6 +76,12 @@ code {
     border-color: #161a25;
     color: #ffffffd6;
 }
+
 .btn-dark:hover {
     background-color: #2a3247 !important;
+}
+
+
+.dropdown-item:hover {
+    background-color: transparent;
 }
