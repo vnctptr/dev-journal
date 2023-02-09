@@ -85,3 +85,52 @@ code {
 .dropdown-item:hover {
     background-color: transparent;
 }
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.pagination > li > a
+{
+    background-color: transparent;
+    color: #4e586e;
+    border: 0 solid white;
+}
+
+.pagination > .disabled > a {
+    background-color: transparent;
+    color: #4e586e;
+}
+
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.pagination > li > a:hover {
+    color: rgba(255, 255, 255, 0.724);
+}
+
+
+.pagination > .active > a
+{
+    color: #ff6900;
+    background-color: transparent !important;
+    border: solid 0 transparent !important;
+}
+
+.pagination > .active > a:hover
+{
+    color: #ff6900;
+    border: solid 0 transparent;
+}
+

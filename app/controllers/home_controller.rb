@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
+  include Pagy::Frontend
+
   def index
     @subjects = Subject.all
-    @notes = Note.order('created DESC').first(5)
+    @pagy, @notes = pagy(Note.order('created DESC'))
   end
 end

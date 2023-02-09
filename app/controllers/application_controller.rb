@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Pagy::Backend
     helper_method :current_user
 
     def ensure_current_user
