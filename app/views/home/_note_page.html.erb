@@ -6,7 +6,7 @@
         </div>
         <div class="note-content">
         <div class="note-title">
-            <h1><%= note.title %></h1>
+            <h1><%= link_to note.title, note %></h1>
             <p><%= note.created.strftime('%d %b %Y') %></p>
         </div>
         <div>
