@@ -1,10 +1,11 @@
+@import "variables";
+
 .about-inner-container {
     margin: auto;
     max-width: 45em;
     margin-top: 6em;
-    background-color: #05080d66;
+    background-color: $dark-blue;
     padding: 2.5em;
-    font-family: "Courier New";
     border-radius: 0.6em;
 }
 

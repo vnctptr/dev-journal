@@ -1,3 +1,4 @@
+@import "variables";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -14,10 +15,11 @@
  *= require_self
  */
 
- body {
-    background-color: #161a25;
+ 
+body {
+    background-color: $primary-color;
     color: #ffffff
- }
+}
 
 h1 {
     font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
@@ -26,11 +28,11 @@ h1 {
 
 h1 > a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 h1 > a:hover{
-    color: rgba(255, 255, 255, 0.724);
+    color: $secondary-color;
 }
 
 
@@ -46,28 +48,26 @@ h3 {
 
 }
 
-.spacer {
-    margin: 3em;
-}
-
-
-.dark-blue-bg {
-    background-color: #161a25;
-}
-
-.med-blue-bg {
-    background-color: #1b212d;
-}
 
 pre {
-    background-color: #0f111840;
+    background-color: $dark-blue;
     padding: 1em;
     border-radius: 0.5em;
 }
 
 code { 
-    color: #ff6900;
+    color: $accent-color;
 }
+
+.spacer {
+    margin: 5em;
+}
+
+
+.sidebar {
+    background-color: $primary-color;
+}
+
 
 .nav-buttons-container {
     display: flex;
@@ -80,10 +80,15 @@ code {
     margin: 1em;
 }
 
+.navbar-toggler-minimal {
+    border-width: 0px;
+    background-color: transparent;
+}
+
 .btn-dark, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #00000078 !important;
     border-color: #161a25;
-    color: #ffffffd6;
+    color: $secondary-color;
 }
 
 .btn-dark:hover {
@@ -95,51 +100,57 @@ code {
     background-color: transparent;
 }
 
+.dropdown-transparent {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
 
-.pagination-container {
+.notes-container {
+    margin: calc(1em + 1vw);
+}
+
+
+.note-container {
+    max-width: 50em;
+    margin: 3em auto;
+
+}
+
+.note-inner-container {
+    background-color: $medium-blue;
+    border: 1.5px solid $dark-blue;
+    border-radius: 6px;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 0.5em 0.5em 0.1em $dark-blue;
+}
+
+.note-content {
+    margin: calc(1em + 2vw);
+}
+
+
+.note-top-bar {
+    display: flex; 
+    min-height: 1.5em; 
+    background-color: $dark-blue; 
+    padding: 0.5em;
+}
+
+.notes-page-title {
+    margin: 3em 0 0 0;
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
 }
 
-.pagination > li > a
-{
-    background-color: transparent;
-    color: #4e586e;
-    border: 0 solid white;
+.small-circle {
+    height: 11px;
+    width: 11px;
+    border-radius: 7px;
+    margin: 0.2em;
+    background-color: $accent-color;
 }
 
-.pagination > .disabled > a {
-    background-color: transparent;
-    color: #4e586e;
+.note-date {
+    white-space: nowrap;
 }
-
-
-.pagination > li > a:focus,
-.pagination > li > a:hover,
-.pagination > li > span:focus,
-.pagination > li > span:hover
-{
-    color: white;
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.pagination > li > a:hover {
-    color: rgba(255, 255, 255, 0.724);
-}
-
-
-.pagination > .active > a
-{
-    color: #ff6900;
-    background-color: transparent !important;
-    border: solid 0 transparent !important;
-}
-
-.pagination > .active > a:hover
-{
-    color: #ff6900;
-    border: solid 0 transparent;
-}
-

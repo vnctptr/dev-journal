@@ -1,0 +1,55 @@
+@import "variables";
+
+
+.page-title {
+    font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
+    color: #ffffff;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.pagination > li > a
+{
+    background-color: transparent;
+    color: $light-blue;
+    border-width: 0;
+}
+
+.pagination > .disabled > a {
+    background-color: transparent;
+    color: $light-blue;
+}
+
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #ffffff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.pagination > li > a:hover {
+    color: $secondary-color;
+}
+
+
+.pagination > .active > a
+{
+    color: $accent-color;
+    background-color: transparent !important;
+    border-width: 0 !important;
+}
+
+.pagination > .active > a:hover
+{
+    color: $accent-color;
+    border-width: 0;
+}
+
