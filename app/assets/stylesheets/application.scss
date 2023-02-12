@@ -86,13 +86,14 @@ code {
 }
 
 .btn-dark, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #00000078 !important;
-    border-color: #161a25;
+    background-color: $dark-blue !important;
+    border-width: 0;
     color: $secondary-color;
 }
 
 .btn-dark:hover {
-    background-color: #2a3247 !important;
+    background-color: $light-blue !important;
+    border-width: 0;
 }
 
 
@@ -153,4 +154,22 @@ code {
 
 .note-date {
     white-space: nowrap;
+}
+
+.search-results-header {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar-container {
+    display:flex;
+}
+
+.search-bar {
+    margin: 0.2em;
+}
+
+.btn-search {
+    margin: 0.2em;
+
 }

@@ -32,9 +32,9 @@
         </ul>
 
         <%= form_tag(search_path, :method => "get") do %> 
-          <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>
-          <div class="">
-            <%= button_tag "Search", :class => 'btn btn-primary glyphicon glyphicon-search', :name => nil %>
+          <div class="search-bar-container">
+          <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control search-bar" %>
+          <%= button_tag "Search", :class => 'btn btn-dark nav-button btn-search ', :name => nil %>
           </div>
         <%end%>
       </div>

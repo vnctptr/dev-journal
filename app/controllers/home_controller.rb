@@ -9,7 +9,7 @@ class HomeController < ApplicationController
   def search
     @subjects = Subject.all
     if params[:search].blank?
-        redurect_to root_path and return
+      redirect_to root_path and return
     else 
       @parameter = params[:search].downcase
       @results = Note.all.where("lower(title) LIKE :search", search: "%#{@parameter}%")
