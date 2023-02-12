@@ -7,6 +7,7 @@ class HomeController < ApplicationController
   end
 
   def search
+    @subjects = Subject.all
     if params[:search].blank?
         redurect_to root_path and return
     else 
