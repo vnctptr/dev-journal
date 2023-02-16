@@ -1,12 +1,12 @@
-<%= render 'home/sidebar' %>
+<%= render "home/sidebar" %>
 
 <div class="notes-container">
-    <% @notes.each do |note| %>
-        <div class="note-container">
-        <%= render 'home/note_page', {note: note} %> 
+  <% @notes.each do |note| %>
+    <div class="note-container">
+      <%= render "home/note_page", { note: note } %>
     </div>
-    <% end %>
-    <div class="pagination-container">
-        <%== pagy_bootstrap_nav(@pagy).html_safe %>
-    </div>
+  <% end %>
+  <div class="pagination-container">
+    <%== pagy_bootstrap_nav(@pagy).html_safe %>
+  </div>
 </div>

@@ -1,16 +1,17 @@
 <div class="note-inner-container">
-<div class="note-top-bar">
+  <div class="note-top-bar">
     <% 3.times do |n| %>
-        <div class="small-circle"></div>
+      <div class="small-circle"></div>
     <% end %>
-        </div>
-        <div class="note-content">
-            <p class="note-date"><%= note.created.strftime('%d %b %Y') %></p>
-            <h1><%= link_to note.title, note %></h1>
-        <br>
-        <p> 
-            <%= markdown(note.content) %>     
-        </p>
-    
-    </div>
-    </div>
+  </div>
+  <div class="note-content">
+    <p class="note-date"><%= note.created.strftime("%d %b %Y") %></p>
+    <h1><%= link_to note.title, note %></h1>
+
+    <br>
+    <p>
+      <%= markdown(note.content) %>
+    </p>
+
+  </div>
+</div>

@@ -15,162 +15,154 @@
  *= require_self
  */
 
- 
 body {
-    background-color: $primary-color;
-    color: #ffffff
+  background-color: $primary-color;
+  color: #ffffff;
 }
 
 h1 {
-    font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
-    font-size: calc(1.5rem + .6vw);
+  font-family: "Titillium Web", "Trebuchet MS", sans-serif;
+  font-size: calc(1.5rem + 0.6vw);
 }
 
 h1 > a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-h1 > a:hover{
-    color: $secondary-color;
+h1 > a:hover {
+  color: $secondary-color;
 }
-
 
 h2 {
-    font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
-    font-size: calc(1.3rem + .6vw);
+  font-family: "Titillium Web", "Trebuchet MS", sans-serif;
+  font-size: calc(1.3rem + 0.6vw);
 }
-
 
 h3 {
-    font-family: "Titillium Web", "Trebuchet MS", sans-serif;   
-    font-size: calc(0.9rem + .6vw);
-    margin-top: 1em; 
+  font-family: "Titillium Web", "Trebuchet MS", sans-serif;
+  font-size: calc(0.9rem + 0.6vw);
+  margin-top: 1em;
 }
-
 
 pre {
-    background-color: $dark-blue;
-    padding: 1em;
-    border-radius: 0.5em;
+  background-color: $dark-blue;
+  padding: 1em;
+  border-radius: 0.5em;
 }
 
-code { 
-    color: $accent-color;
+code {
+  color: $accent-color;
 }
 
 .spacer {
-    margin: 5em;
+  margin: 5em;
 }
-
 
 .sidebar {
-    background-color: $primary-color;
+  background-color: $primary-color;
 }
 
-
 .nav-buttons-container {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    margin: 0.7em 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin: 0.7em 0;
 }
 
 .nav-button {
-    margin: 1em;
+  margin: 1em;
 }
 
 .navbar-toggler-minimal {
-    border-width: 0px;
-    background-color: transparent;
+  border-width: 0px;
+  background-color: transparent;
 }
 
-.btn-dark, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: $dark-blue !important;
-    border-width: 0;
-    color: $secondary-color;
+.btn-dark,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: $dark-blue !important;
+  border-width: 0;
+  color: $secondary-color;
 }
 
 .btn-dark:hover {
-    background-color: $light-blue !important;
-    border-width: 0;
+  background-color: $light-blue !important;
+  border-width: 0;
 }
 
-
 .dropdown-item:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .dropdown-transparent {
-    background-color: transparent !important;
-    border-color: transparent !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .notes-container {
-    margin: calc(1em + 1vw);
+  margin: calc(1em + 1vw);
 }
 
-
 .note-container {
-    max-width: 50em;
-    margin: 3em auto;
-
+  max-width: 50em;
+  margin: 3em auto;
 }
 
 .note-inner-container {
-    background-color: $medium-blue;
-    border: 1.5px solid $dark-blue;
-    border-radius: 6px;
-    padding-bottom: 1em;
-    margin: 0 auto;
-    box-shadow: 0.5em 0.5em 0.1em $dark-blue;
+  background-color: $medium-blue;
+  border: 1.5px solid $dark-blue;
+  border-radius: 6px;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  box-shadow: 0.5em 0.5em 0.1em $dark-blue;
 }
 
 .note-content {
-    margin: calc(1em + 2vw);
+  margin: calc(1em + 2vw);
 }
 
-
 .note-top-bar {
-    display: flex; 
-    min-height: 1.5em; 
-    background-color: $dark-blue; 
-    padding: 0.5em;
+  display: flex;
+  min-height: 1.5em;
+  background-color: $dark-blue;
+  padding: 0.5em;
 }
 
 .notes-page-title {
-    margin: 3em 0 0 0;
-    display: flex;
-    justify-content: center;
+  margin: 3em 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 .small-circle {
-    height: 11px;
-    width: 11px;
-    border-radius: 7px;
-    margin: 0.2em;
-    background-color: $accent-color;
+  height: 11px;
+  width: 11px;
+  border-radius: 7px;
+  margin: 0.2em;
+  background-color: $accent-color;
 }
 
 .note-date {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .search-results-header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .search-bar-container {
-    display:flex;
-    margin: 1em 0;
+  display: flex;
+  margin: 1em 0;
 }
 
 .search-bar {
-    margin: 0.2em;
+  margin: 0.2em;
 }
 
 .btn-search {
-    margin: 0.2em;
-
+  margin: 0.2em;
 }
