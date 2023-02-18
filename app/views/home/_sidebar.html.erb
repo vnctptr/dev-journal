@@ -45,7 +45,7 @@
                 <%= subject.name %>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark dropdown-transparent">
-                <% subject.notes.each do |note| %>
+                <% subject.notes.order('title ASC').each do |note| %>
                   <li><%= link_to note.title, note, class: "dropdown-item" %></li>
                 <% end %>
               </ul>
