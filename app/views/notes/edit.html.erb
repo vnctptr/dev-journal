@@ -5,7 +5,9 @@
 <br>
 
 <div>
-  <%= link_to "Show this note", @note %> |
-  <%= link_to "Destroy this note", @note, method: :delete, class: "btn btn-dark btn-sm nav-button" %>
-      
+  <%= link_to "Show this note", @note, class: "btn btn-dark btn-sm nav-button" %>
+  <%= button_to "Destroy this note",
+  @note,
+  method: :delete,
+  class: "btn btn-dark btn-sm nav-button" %>
 </div>
