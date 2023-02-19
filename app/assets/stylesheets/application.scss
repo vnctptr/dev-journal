@@ -166,3 +166,13 @@ code {
 .btn-search {
   margin: 0.2em;
 }
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  padding: 0.5em;
+  border: 1px solid white;
+}
