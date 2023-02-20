@@ -167,12 +167,17 @@ code {
   margin: 0.2em;
 }
 
+table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  margin-bottom: 2em;
+}
+
 tbody,
 td,
-tfoot,
 th,
-thead,
 tr {
-  padding: 0.5em;
-  border: 1px solid white;
+  background-color: $primary-color;
+  padding: 1em;
+  min-width: 8em;
 }
