@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tags
   get 'users/new'
   get 'sessions/new'
   resources :subjects
