@@ -1,18 +1,20 @@
 <p style="color: green"><%= notice %></p>
 <%= render "home/sidebar" %>
 
-<div class="note-container">
-  <%= render @note %>
-  <div class="nav-buttons-container">
-    <% if current_user %>
-      <%= link_to "Edit this note",
-      edit_note_path(@note),
-      class: "btn btn-dark btn-sm nav-button" %>
-      <%= button_to "Destroy this note",
-      @note,
-      method: :delete,
-      class: "btn btn-dark btn-sm nav-button" %>
-    <% end %>
+<div class="notes-container">
+  <div class="note-container">
+    <%= render @note %>
+    <div class="nav-buttons-container">
+      <% if current_user %>
+        <%= link_to "Edit this note",
+        edit_note_path(@note),
+        class: "btn btn-dark btn-sm nav-button" %>
+        <%= button_to "Destroy this note",
+        @note,
+        method: :delete,
+        class: "btn btn-dark btn-sm nav-button" %>
+      <% end %>
 
+    </div>
   </div>
 </div>

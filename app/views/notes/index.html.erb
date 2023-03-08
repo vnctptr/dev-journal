@@ -1,21 +1,24 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="notes-page-title">
-<h1>Notes</h1>
+  <h1>Notes</h1>
 </div>
 
 <% if current_user %>
-<%= link_to "New note", new_note_path, class: "btn btn-dark btn-sm nav-button" %>
-<% end%>
+  <%= link_to "New note", new_note_path, class: "btn btn-dark btn-sm nav-button" %>
+<% end %>
 
-<div id="notes">
+<div class="notes-container">
+  <%# <div id="notes"> %>
   <% @notes.each do |note| %>
-  <div class="note-container">
-    <%= render note %>
-    <% if current_user %>
-       <%= link_to "Edit this note", edit_note_path(note), class: "btn btn-dark btn-sm nav-button" %>
-    <% end%>
-  </div>
+    <div class="note-container">
+      <%= render note %>
+      <% if current_user %>
+        <%= link_to "Edit this note",
+        edit_note_path(note),
+        class: "btn btn-dark btn-sm nav-button" %>
+      <% end %>
+    </div>
   <% end %>
+  <%# </div> %>
 </div>
-
