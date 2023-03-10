@@ -14,17 +14,18 @@
 
   <div>
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :created, style: "display: block" %>
-    <%= form.datetime_field :created %>
+    <%= form.datetime_field :created, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :content, style: "display: block" %>
-    <%= form.text_area :content %>
+    <%= form.text_area :content, class: "form-control" %>
   </div>
 
   <div>
@@ -33,7 +34,8 @@
                 options_for_select(
                   Subject.all.map { |s| [s.name, s.id] },
                   note.subject_id
-                ) %>
+                ),
+                class: %>
   </div>
 
   <div>
@@ -47,6 +49,7 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Submit", class: "btn btn-dark tbn-sm nav-button" %>
   </div>
+
 <% end %>
