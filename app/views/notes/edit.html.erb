@@ -1,9 +1,12 @@
-<h1>Editing note</h1>
+<div class="notes-page-title">
+  <!-- TODO: change class name to something more generic -->
+  <h1>Editing note</h1>
+</div>
+<div class="form-container">
+  <!-- TODO: change class name to something more generic -->
+  <%= render "form", note: @note %>
 
-<%= render "form", note: @note %>
-
-<br>
-
+</div>
 <div>
   <%= link_to "Show this note", @note, class: "btn btn-dark btn-sm nav-button" %>
   <%= button_to "Destroy this note",
