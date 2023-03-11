@@ -1,7 +1,9 @@
-<h1>New note</h1>
-
+<div class="notes-page-title">
+  <!-- TODO: change class name to something more generic -->
+  <h1>New note</h1>
+</div>
 <% if current_user %>
-<%= render "form", note: @note %>
-<% end%>
-
-
+  <div class="form-container">
+    <%= render "form", note: @note %>
+  </div>
+<% end %>
