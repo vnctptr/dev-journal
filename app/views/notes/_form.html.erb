@@ -40,7 +40,7 @@
 
   <div>
     <%= form.label :tag_id, style: "display: block" %>
-    <%= form.select :note,
+    <%= form.select :tag_ids,
                 options_from_collection_for_select(Tag.all, "id", "name"),
                 {},
                 multiple: true,
