@@ -6,6 +6,13 @@
   </div>
   <div class="note-content">
     <p class="note-date"><%= note.created.strftime("%d %b %Y") %></p>
+    <div class="tags-container">
+      <% note.tags.each do |tag| %>
+      <span class="note-tag">
+          #<%=tag.name%>
+      </span>
+      <% end %>
+    </div>
     <h1><%= link_to note.title, note %></h1>
 
     <br>
