@@ -13,6 +13,7 @@ class NotesController < ApplicationController
   # GET /notes/new
   def new
     @note = Note.new
+    @note.created ||= Time.zone.now
   end
 
   # GET /notes/1/edit
