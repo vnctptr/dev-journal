@@ -1,6 +1,6 @@
 <%= render "home/sidebar" %>
 
-<div class="notes-container">
+<div class="container-responsive-margin">
   <% @notes.each do |note| %>
     <div class="note-container">
       <%= render "home/note_page", { note: note } %>
