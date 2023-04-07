@@ -146,6 +146,10 @@ p > a:active {
   margin: 0.2em;
 }
 
+.highlight {
+  color: $accent-color;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 0 5px;
