@@ -127,55 +127,10 @@ p > a:active {
   margin: 3em auto;
 }
 
-.note-inner-container {
-  background-color: $medium-blue;
-  border: 1.5px solid $dark-blue;
-  border-radius: 6px;
-  padding-bottom: 1em;
-  margin: 0 auto;
-  box-shadow: 0.5em 0.5em 0.1em $dark-blue;
-}
-
-.note-content {
-  margin: calc(1em + 2vw);
-}
-
-.note-top-bar {
-  display: flex;
-  min-height: 1.5em;
-  background-color: $dark-blue;
-  padding: 0.5em;
-}
-
-.note-content-input {
-  min-height: 13em !important;
-}
-
 .page-title {
   margin: 3em 0 0 0;
   display: flex;
   justify-content: center;
-}
-
-.small-circle {
-  height: 11px;
-  width: 11px;
-  border-radius: 7px;
-  margin: 0.2em;
-  background-color: $accent-color;
-}
-
-.note-date {
-  white-space: nowrap;
-}
-
-.tags-container {
-  margin-bottom: 1em;
-}
-
-.note-tag {
-  color: $accent-color;
-  margin-bottom: 0.3em;
 }
 
 .search-bar-container {

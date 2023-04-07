@@ -1,0 +1,46 @@
+@import "variables";
+
+.note-inner-container {
+  background-color: $medium-blue;
+  border: 1.5px solid $dark-blue;
+  border-radius: 6px;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  box-shadow: 0.5em 0.5em 0.1em $dark-blue;
+}
+
+.note-content {
+  margin: calc(1em + 2vw);
+}
+
+.note-top-bar {
+  display: flex;
+  min-height: 1.5em;
+  background-color: $dark-blue;
+  padding: 0.5em;
+}
+
+.note-content-input {
+  min-height: 13em !important;
+}
+
+.note-date {
+  white-space: nowrap;
+}
+
+.small-circle {
+  height: 11px;
+  width: 11px;
+  border-radius: 7px;
+  margin: 0.2em;
+  background-color: $accent-color;
+}
+
+.tags-container {
+  margin-bottom: 1em;
+}
+
+.note-tag {
+  color: $accent-color;
+  margin-bottom: 0.3em;
+}
