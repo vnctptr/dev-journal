@@ -57,22 +57,22 @@ code {
 
 p a:link,
 li a:link {
-  color: $secondary-color;
+  color: $link-color;
 }
 
 p a:visited,
 li a:visited {
-  color: $secondary-color;
+  color: $link-color;
 }
 
 p a:hover,
 li a:hover {
-  color: $light-blue;
+  color: $link-hover-color;
 }
 
 p a:active,
 li a:active {
-  color: $light-blue;
+  color: $link-hover-color;
 }
 
 .spacer {
