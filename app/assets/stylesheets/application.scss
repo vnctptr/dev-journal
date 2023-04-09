@@ -55,19 +55,23 @@ code {
   color: $accent-color;
 }
 
-p > a:link {
+p a:link,
+li a:link {
   color: $secondary-color;
 }
 
-p > a:visited {
+p a:visited,
+li a:visited {
   color: $secondary-color;
 }
 
-p > a:hover {
+p a:hover,
+li a:hover {
   color: $light-blue;
 }
 
-p > a:active {
+p a:active,
+li a:active {
   color: $light-blue;
 }
 
