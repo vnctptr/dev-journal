@@ -9,7 +9,7 @@
     <div class="tags-container">
       <% note.tags.each do |tag| %>
         <span class="note-tag">
-          #<%= tag.name %>
+          #<%= link_to tag.name, tag %>
         </span>
       <% end %>
     </div>
