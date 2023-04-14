@@ -154,6 +154,19 @@ li a:active {
   color: $accent-color;
 }
 
+.tag {
+  color: $accent-color;
+}
+
+.tag > a {
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.tag > a:hover {
+  color: $accent-color-dark;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 0 5px;

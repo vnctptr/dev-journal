@@ -1,7 +1,12 @@
 <div id="<%= dom_id tag %>">
-  <p>
-    <%= tag.name %>
-  </p>
+
+<div class="page-title">
+  <h2>Notes with tag 
+      <span class="tag">
+        #<%= link_to tag.name, tag %>
+      </span>
+  </h2>
+</div>
 
 <div class="container-responsive-margin">
   <% tag.notes.each do |note| %>
