@@ -75,6 +75,10 @@ li a:active {
   color: $link-hover-color;
 }
 
+a {
+  text-decoration: none;
+}
+
 .spacer {
   margin: 5em;
 }
