@@ -10,7 +10,7 @@
 </div>
 
 <div class="container-responsive-margin">
-  <% tag.notes.each do |note| %>
+  <% tag.notes.order(created: :desc).each do |note| %>
     <div class="note-container">
       <%= render note %>
       <% if current_user %>
