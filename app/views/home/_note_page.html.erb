@@ -8,8 +8,8 @@
     <p class="note-date"><%= note.created.strftime("%d %b %Y") %></p>
     <div class="tags-container">
       <% note.tags.each do |tag| %>
-        <span class="note-tag">
-          #<%= tag.name %>
+        <span class="tag">
+          #<%= link_to tag.name, tag %>
         </span>
       <% end %>
     </div>
