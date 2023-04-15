@@ -41,7 +41,7 @@
   <div>
     <%= form.label :tag_id, style: "display: block" %>
     <%= form.select :tag_ids,
-                options_from_collection_for_select(Tag.all, "id", "name"),
+                options_from_collection_for_select(Tag.all, "id", "name", note.tag_ids),
                 {},
                 multiple: true,
                 class: "form-control" %>
