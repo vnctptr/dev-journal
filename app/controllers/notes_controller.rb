@@ -8,6 +8,7 @@ class NotesController < ApplicationController
 
   # GET /notes/1 or /notes/1.json
   def show
+    @tags = Tag.all
   end
 
   # GET /notes/new

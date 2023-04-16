@@ -9,6 +9,7 @@ class TagsController < ApplicationController
   # GET /tags/1 or /tags/1.json
   def show
     @subjects = Subject.all
+    @tags = Tag.all
   end
 
   # GET /tags/new

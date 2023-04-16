@@ -4,6 +4,7 @@ class HomeController < ApplicationController
   def index
     @subjects = Subject.all
     @pagy, @notes = pagy(Note.order('created DESC'))
+    @tags = Tag.all
   end
 
   def search

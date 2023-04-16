@@ -62,6 +62,16 @@
             <%= button_tag "Search", class: "btn btn-dark nav-button btn-search ", name: nil %>
           </div>
         <% end %>
+
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <% @tags.each do |tag| %>
+            <li class="nav-item">
+              <span class="tag">
+                #<%= link_to tag.name, tag %>
+              </span>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>

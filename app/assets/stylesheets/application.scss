@@ -163,12 +163,12 @@ a {
 }
 
 .tag > a {
-  color: $accent-color;
+  color: $accent-color !important;
   text-decoration: none;
 }
 
 .tag > a:hover {
-  color: $accent-color-dark;
+  color: $accent-color-dark !important;
 }
 
 table {
