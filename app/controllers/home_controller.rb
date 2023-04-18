@@ -9,6 +9,7 @@ class HomeController < ApplicationController
 
   def search
     @subjects = Subject.all
+    @tags = Tag.all
     if params[:search].blank?
       redirect_to root_path and return
     else 
