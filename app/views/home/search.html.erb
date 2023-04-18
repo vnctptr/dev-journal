@@ -3,9 +3,16 @@
   <h1>Search Results</h1>
 </div>
 <div class="container-responsive-margin">
-  <% @results.each do |result| %>
-    <div class="note-container">
-      <%= render "home/note_page", { note: result } %>
+  <% if @results.empty? %>
+    <div class="no-results-message">
+    <%= image_tag('search-icon.svg', size: '100x100') %>
+    <p class="text-center">Sorry! Nothing found :(</p>
     </div>
+  <% else %>
+    <% @results.each do |result| %>
+      <div class="note-container">
+        <%= render "home/note_page", { note: result } %>
+      </div>
+    <% end %>
   <% end %>
 </div>
