@@ -16,6 +16,12 @@ module ApplicationHelper
         }
         @markdown ||= Redcarpet::Markdown.new(Redcarpet::Render::HTML, @options)
         @markdown.render(content).html_safe
-      end
-      
+    end
+
+    def show_svg(path)
+        File.open("app/assets/images/#{path}", "rb") do |file|
+            raw file.read
+        end      
+    end      
+
 end

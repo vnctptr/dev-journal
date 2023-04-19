@@ -177,6 +177,14 @@ a {
   align-items: center;
 }
 
+a > svg:hover {
+  fill: $secondary-color;
+}
+
+a > svg {
+  fill: #ffffff;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 0 5px;
