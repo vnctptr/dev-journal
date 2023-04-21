@@ -50,6 +50,8 @@ gem "redcarpet"
 
 gem 'bcrypt'
 
+gem 'faker'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
