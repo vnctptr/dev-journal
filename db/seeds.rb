@@ -22,3 +22,8 @@ end
       subject_id: Subject.pluck(:id).sample
     )
 end
+
+User.create(
+  email: Faker::Internet.email,
+  password_digest: BCrypt::Password.create("password")
+)
