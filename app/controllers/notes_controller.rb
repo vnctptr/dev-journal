@@ -1,4 +1,6 @@
 class NotesController < ApplicationController
+  before_action :ensure_current_user, except: [:show]
+
   before_action :set_note, only: %i[ show edit update destroy ]
 
   # GET /notes or /notes.json

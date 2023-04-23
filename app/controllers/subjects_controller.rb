@@ -1,4 +1,5 @@
 class SubjectsController < ApplicationController
+  before_action :ensure_current_user
   before_action :set_subject, only: %i[ show edit update destroy ]
 
   # GET /subjects or /subjects.json
