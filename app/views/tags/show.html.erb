@@ -19,15 +19,22 @@
 </div>
 
 <div class="container-responsive-margin">
-  <% @tag.notes.order(created: :desc).each do |note| %>
-    <div class="note-container">
-      <%= render note %>
-      <% if current_user %>
-        <%= link_to "Edit this note",
-        edit_note_path(note),
-        class: "btn btn-dark btn-sm nav-button" %>
-      <% end %>
+  <% if @tag.notes.empty? %>
+    <div class="no-results-message">
+      <%= image_tag('search-icon.svg', size: '100x100') %>
+      <p class="text-center">Sorry! Looks like there aren't any notes that use this tag :(</p>
     </div>
+  <% else %>
+    <% @tag.notes.order(created: :desc).each do |note| %>
+      <div class="note-container">
+        <%= render note %>
+        <% if current_user %>
+          <%= link_to "Edit this note",
+          edit_note_path(note),
+          class: "btn btn-dark btn-sm nav-button" %>
+        <% end %>
+      </div>
+    <% end %>
   <% end %>
 </div>
 
