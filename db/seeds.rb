@@ -24,6 +24,6 @@ end
 end
 
 User.create(
-  email: Faker::Internet.email,
+  email: 'test@test.com',
   password_digest: BCrypt::Password.create("password")
 )
