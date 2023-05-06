@@ -15,12 +15,15 @@ end
 end
 
 15.times do
-    Note.create(
+    note = Note.create(
       title: Faker::Lorem.sentence(word_count: 3),
       created: Faker::Time.backward(days: 365),
       content: Faker::Lorem.paragraph,
       subject_id: Subject.pluck(:id).sample
     )
+    rand(1..3).times do
+      note.tags << Tag.all.sample
+    end
 end
 
 User.create(
