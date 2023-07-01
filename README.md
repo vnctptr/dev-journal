@@ -1,6 +1,6 @@
 # Vinnie's Dev Journal
 
-Hi, welcome to my dev journal, a place where I document my dev journey, store things I learned and things I wanna have easy access to. [Click here](https://www.vnctptr.me/) to start reading.
+Hi, welcome to my dev journal, a place where I document my dev journey, store notes and solutions to problems I've encountered over the years. [Click here](https://www.vnctptr.me/) to start reading.
 
 <br>
 <br>
