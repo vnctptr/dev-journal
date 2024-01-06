@@ -27,12 +27,14 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <%= link_to "Home", root_path, class: "nav-link active" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "About", main_app.about_path, class: "nav-link active" %>
-          </li>
+          <div class="navbar-links">
+             <li class="nav-item">
+               <%= link_to "Home", root_path, class: "nav-link active" %>
+             </li>
+             <li class="nav-item">
+               <%= link_to "About", main_app.about_path, class: "nav-link active" %>
+             </li>
+          </div>
           <% @subjects.each do |subject| %>
             <li class="nav-item dropdown">
               <a
