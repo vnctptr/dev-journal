@@ -12,3 +12,16 @@
 .about-outer-container {
   margin: 0px 4vw;
 }
+
+.link-accent {
+  color: $accent-color;
+}
+
+.link-accent > a {
+  color: $accent-color !important;
+  text-decoration: none;
+}
+
+.link-accent > a:hover {
+  color: $accent-color-dark !important;
+}
