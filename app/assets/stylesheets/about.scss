@@ -1,14 +1,5 @@
 @import "variables";
 
-.about-inner-container {
-  margin: auto;
-  max-width: 45em;
-  margin-top: 6em;
-  background-color: $dark-blue;
-  padding: 2.5em;
-  border-radius: 0.6em;
-}
-
 .about-outer-container {
   margin: 0px 4vw;
 }
@@ -24,4 +15,14 @@
 
 .link-accent > a:hover {
   color: $accent-color-dark !important;
+}
+
+.flat-box {
+    border-radius: 10px;
+    background-color: $medium-blue;
+    box-shadow: 0.5em 0.5em 0.1em rgba(15, 18, 26, 0.53);
+    margin: auto;
+    max-width: 45em;
+    margin-top: 6em;
+    padding: 2.5em;
 }
